@@ -11,6 +11,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -47,6 +48,7 @@ public class Course_info extends AppCompatActivity {
     private void initToolbar(){
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("Course_Information");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     private void setupListView(){
@@ -99,5 +101,14 @@ public class Course_info extends AppCompatActivity {
             private LetterImageView ivLogo;
             private TextView tvCourse, tvFullName;
         }
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch(item.getItemId()){
+            case android.R.id.home : {
+                onBackPressed();
+            }
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
