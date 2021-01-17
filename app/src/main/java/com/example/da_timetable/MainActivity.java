@@ -7,6 +7,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 //import android.os.Build;
 import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -26,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
 
     private Toolbar toolbar;
     private ListView listView;
+    public static SharedPreferences sharedPreferences;
+    public static String DAY_CHOSEN;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
     private void setupUIViews(){
         toolbar = (Toolbar)findViewById(R.id.ToolbarMain);
         listView = (ListView)findViewById(R.id.lvMain);
+        sharedPreferences = getSharedPreferences("CURR_DAY", MODE_PRIVATE);
     }
     private void initToolbar(){
         setSupportActionBar(toolbar);
@@ -58,12 +63,36 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 switch(position){
-                    case 0 : break;
-                    case 1 : break;
-                    case 2 : break;
-                    case 3 : break;
-                    case 4 : break;
-                    case 5 : break;
+                    case 0: {
+                        startActivity(new Intent(MainActivity.this, Today_activity.class));
+                        sharedPreferences.edit().putString(DAY_CHOSEN, "Monday").apply();
+                        break;
+                    }
+                    case 1: {
+                        startActivity(new Intent(MainActivity.this, Today_activity.class));
+                        sharedPreferences.edit().putString(DAY_CHOSEN, "Tuesday").apply();
+                        break;
+                    }
+                    case 2: {
+                        startActivity(new Intent(MainActivity.this, Today_activity.class));
+                        sharedPreferences.edit().putString(DAY_CHOSEN, "Wednesday").apply();
+                        break;
+                    }
+                    case 3: {
+                        startActivity(new Intent(MainActivity.this, Today_activity.class));
+                        sharedPreferences.edit().putString(DAY_CHOSEN, "Thursday").apply();
+                        break;
+                    }
+                    case 4: {
+                        startActivity(new Intent(MainActivity.this, Today_activity.class));
+                        sharedPreferences.edit().putString(DAY_CHOSEN, "Friday").apply();
+                        break;
+                    }
+                    case 5: {
+                        startActivity(new Intent(MainActivity.this, Today_activity.class));
+                        sharedPreferences.edit().putString(DAY_CHOSEN, "Saturday").apply();
+                        break;
+                    }
                     default:break;
                 }
             }

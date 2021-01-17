@@ -9,4 +9,93 @@
         <item> Friday </item>
         <item> Saturday </item>
     </string-array>
+
+    <string-array name="Monday">
+        <item>SC332 / SC402 / SC403</item>
+        <item>HM327 / HM401 / HM402 / HM432</item>
+        <item>CT474 / IE406 / IT413 / IT422 / IT441</item>
+        <item>CS302 LAB</item>
+        <item>Break</item>
+    </string-array>
+
+    <string-array name="Tuesday">
+        <item>IT314</item>
+        <item>CS302(Free Course)</item>
+        <item>CS306 / CT321 / CT478 / EL422 / IE407 / IE410</item>
+        <item>CS401</item>
+        <item>IE411 LAB / CS401 LAB</item>
+    </string-array>
+
+    <string-array name="Wednesday">
+        <item>CT474 / IE406 / IT413 / IT422 / IT441</item>
+        <item>CT351 / CT477 / IE411 / IT424</item>
+        <item>CS301</item>
+        <item>CS301 LAB</item>
+        <item>Break</item>
+    </string-array>
+
+    <string-array name="Thursday">
+        <item>IT314</item>
+        <item>SC332 / SC402 / SC403</item>
+        <item>HM327 / HM401 / HM402 / HM432</item>
+        <item>(CS306 / CT321 / CT478 / EL422 / IE407 / IE410) LAB</item>
+        <item>Break</item>
+    </string-array>
+
+    <string-array name="Friday">
+        <item>CS306 / CT321 / CT478 / EL422 / IE407 / IE410</item>
+        <item>CS301</item>
+        <item>CT351 / CT477 / IE411 / IT424</item>
+        <item>IT413 LAB / IT441 LAB / IE406 LAB</item>
+        <item>CS401</item>
+    </string-array>
+
+    <string-array name="Saturday">
+        <item>Break</item>
+        <item>CS302</item>
+        <item>Break</item>
+        <item>IT314 LAB</item>
+    </string-array>
+
+    <string-array name="time1">
+        <item>8:30AM - 9:45AM</item>
+        <item>10:15AM - 11:30AM</item>
+        <item>12:00AM - 13:15PM</item>
+        <item>2:00PM - 4:00PM/5:00PM</item>
+        <item>5:30PM - 7:30PM</item>
+    </string-array>
+    <string-array name="time2">
+        <item>8:30AM - 9:45AM</item>
+        <item>10:15AM - 11:30AM</item>
+        <item>12:00AM - 13:15PM</item>
+        <item>2:00PM - 4:00PM/5:00PM</item>
+        <item>4:15PM - 5:30PM</item>
+    </string-array>
+    <string-array name="time3">
+        <item>8:30AM - 9:45AM</item>
+        <item>10:15AM - 11:30AM</item>
+        <item>12:00AM - 13:15PM</item>
+        <item>2:00PM - 4:00PM/5:00PM</item>
+        <item>5:30PM - 7:30PM</item>
+    </string-array>
+    <string-array name="time4">
+        <item>8:30AM - 9:45AM</item>
+        <item>10:15AM - 11:30AM</item>
+        <item>12:00AM - 13:15PM</item>
+        <item>2:00PM - 4:00PM/5:00PM</item>
+        <item>5:30PM - 7:30PM</item>
+    </string-array>
+    <string-array name="time5">
+        <item>8:30AM - 9:45AM</item>
+        <item>10:15AM - 11:30AM</item>
+        <item>12:00AM - 13:15PM</item>
+        <item>2:00PM - 4:00PM/5:00PM</item>
+        <item>4:15PM - 5:30PM</item>
+    </string-array>
+    <string-array name="time6">
+        <item>8:30AM - 9:45AM</item>
+        <item>10:15AM - 11:30AM</item>
+        <item>12:00AM - 13:15PM</item>
+        <item>2:00PM - 5:00PM</item>
+    </string-array>
 </resources>

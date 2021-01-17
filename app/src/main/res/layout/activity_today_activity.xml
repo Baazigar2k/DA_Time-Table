@@ -4,15 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/purple_200"
+    android:background="@color/black"
     tools:context=".MainActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="?android:attr/actionBarSize"
-        android:background="@color/purple_700"
+        android:background="@color/teal_200"
         app:titleTextColor="@color/white"
-        android:id="@+id/ToolbarMain">
+        android:id="@+id/ToolbarToday">
     </androidx.appcompat.widget.Toolbar>
 
     <ListView
@@ -21,7 +21,7 @@
         android:layout_margin="10dp"
         android:dividerHeight="10dp"
         android:divider="@null"
-        android:id="@+id/lvMain"
-        android:layout_below="@+id/ToolbarMain">
+        android:id="@+id/lvToday"
+        android:layout_below="@+id/ToolbarToday">
     </ListView>
 </RelativeLayout>
