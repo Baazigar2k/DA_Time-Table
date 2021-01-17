@@ -98,4 +98,22 @@
         <item>12:00AM - 13:15PM</item>
         <item>2:00PM - 5:00PM</item>
     </string-array>
+
+    <string-array name="Courses">
+        <item> SC332 </item>
+        <item> SC402 </item>
+        <item> SC403 </item>
+        <item> HM327 </item>
+        <item> IT413 </item>
+        <item> CS302 </item>
+    </string-array>
+
+    <string-array name="CoursesFullName">
+        <item> Introduction to Quantum Mechanics </item>
+        <item> Introduction to Cryptography </item>
+        <item> Einsteins Physics </item>
+        <item> Culture Politics Identity </item>
+        <item> No SQL Databases </item>
+        <item> Modeling and Simulation </item>
+    </string-array>
 </resources>

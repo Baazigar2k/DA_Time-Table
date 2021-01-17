@@ -2,11 +2,14 @@ package com.example.da_timetable;
 
 import android.content.Context;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
@@ -97,6 +100,17 @@ public class Today_activity extends AppCompatActivity {
         SimpleAdapter simpleAdapter = new SimpleAdapter(Today_activity.this, My_Day, My_Time);
         listView.setAdapter(simpleAdapter);
 
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                switch(position){
+                    default: {
+                        startActivity(new Intent(Today_activity.this, Course_info.class));
+                        break;
+                    }
+                }
+            }
+        });
     }
 
     public class SimpleAdapter extends BaseAdapter {
